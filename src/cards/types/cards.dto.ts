@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsIn, IsMongoId, IsNotEmpty, IsOptional, IsString } from 'class-validator';
+import { IsIn, IsMongoId, IsNotEmpty, IsNumber, IsOptional, IsString } from 'class-validator';
 import { cardsState, CardsStateEnum } from 'src/common/constants';
 
 export class AddCardsDto {
@@ -21,6 +21,15 @@ export class UpdateCardDto {
   @ApiProperty({ example: CardsStateEnum.TODO, enum: cardsState })
   @IsIn(cardsState)
   state: CardsStateEnum;
+
+  @ApiProperty({ example: new Date().getTime() })
+  @IsNumber()
+  startTime: number;
+
+  @ApiProperty({ example: new Date().getTime() })
+  @IsNumber()
+  @IsOptional()
+  endTime: number;
 
   @ApiProperty({ example: '25$' })
   @IsString()

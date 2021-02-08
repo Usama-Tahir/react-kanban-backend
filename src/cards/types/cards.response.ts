@@ -4,7 +4,7 @@ export class AddCardsResponse {
   @ApiProperty({ example: '600c709648aa4170f1b5c0c8' })
   _id: string;
 
-  @ApiProperty({ example: 'doto' })
+  @ApiProperty({ example: 'todo' })
   state: string;
 
   @ApiProperty({ example: '2.5$' })

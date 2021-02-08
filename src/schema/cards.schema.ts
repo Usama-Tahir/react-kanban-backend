@@ -18,6 +18,12 @@ export class Cards {
   @Prop({ type: String, default: '' })
   calculatedCost?: string;
 
+  @Prop({ type: Number })
+  startTime?: number;
+
+  @Prop({ type: Number })
+  endTime?: number;
+
   @Prop({ type: String, default: '' })
   timeSpent?: string;
 

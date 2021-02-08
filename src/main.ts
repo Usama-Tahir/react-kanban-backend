@@ -40,6 +40,7 @@ async function bootstrap() {
 
   if (env !== nodeEnv.PRODUCTION) {
     allowedOrigins.push(/^http?:\/\/([a-z0-9]+[.])*localhost:3000/i);
+    allowedOrigins.push(/^http?:\/\/([a-z0-9]+[.])*localhost:5000/i);
     allowedOrigins.push(/^https?:\/\/([a-z0-9]+[.])*amplifyapp.com/i);
   }
   app.enableCors({

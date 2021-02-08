@@ -1,6 +1,15 @@
 # Kanban-Backend
 
-How to deploy this app?
+## How to Run Locally
+<p>1. Node: v10.21.0 or above</p>
+<p>2. npm</p>
+<p>3. Install nestjs cli globally (`npm i -g @nestjs/cli`)</p>
+<p>5. mongodb: v4.2 or above</p>
+<p>Fill .env file</p>
+<p>Install dependencies `npm i`</p>
+<p>Start App by running `npm run start:dev`</p>
+
+## How to deploy this app?
 
 After creating virtual machine with ubuntu 16.04 or ubuntu 18.04, you need to install following things:
 <p>1. Node: v10.21.0 or above</p>
